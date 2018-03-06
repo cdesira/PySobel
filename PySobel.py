@@ -7,7 +7,6 @@ pylab.ion()
 def kernal_convolution(image_path):
 
     '''
-
     *Performs a Sobel Kernal Conolution and Saves Output as JPG.
 
 	Parameters
@@ -19,7 +18,6 @@ def kernal_convolution(image_path):
 	Returns
 	-------
 	y_copy :  <type 'ndarray'>
-
     '''
 
     #Sobel kernal
@@ -30,7 +28,6 @@ def kernal_convolution(image_path):
     kernal_y = [[-1,-2,-1],
                [0,0,0],
                [1,2,1]]
-
 
     #open image and make copy
     img = cv2.imread(image_path)
@@ -43,7 +40,6 @@ def kernal_convolution(image_path):
 
         for j in range(1, ysize - 1):
 
-
             xpix = (kernal_x[0][0] * y[i-1][j-1]) + (kernal_x[0][1] * y[i][j-1]) + (kernal_x[0][2] * y[i+1][j-1]) +\
                 (kernal_x[1][0] * y[i-1][j])   + (kernal_x[1][1] * y[i][j])   + (kernal_x[1][2] * y[i+1][j]) +\
                 (kernal_x[2][0] * y[i-1][j+1]) + (kernal_x[2][1] * y[i][j+1]) + (kernal_x[2][2] * y[i+1][j+1])
@@ -51,7 +47,6 @@ def kernal_convolution(image_path):
             ypix = (kernal_y[0][0] * y[i-1][j-1]) + (kernal_y[0][1] * y[i][j-1]) + (kernal_y[0][2] * y[i+1][j-1]) +\
                 (kernal_y[1][0] * y[i-1][j])   + (kernal_y[1][1] * y[i][j])   + (kernal_y[1][2] * y[i+1][j]) +\
                 (kernal_y[2][0] * y[i-1][j+1]) + (kernal_y[2][1] * y[i][j+1]) + (kernal_y[2][2] * y[i+1][j+1])
-
 
             mag = np.sqrt( (xpix * xpix) + (ypix * ypix) )
             mag = np.abs(mag)
@@ -66,5 +61,5 @@ def kernal_convolution(image_path):
     return y_copy
 
 if __name__ == '__main__':
-    
+
     arr = kernal_convolution('corpus.jpg')

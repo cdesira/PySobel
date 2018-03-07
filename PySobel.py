@@ -7,13 +7,13 @@ pylab.ion()
 def kernal_convolution(image_path):
 
     '''
-    *Performs a Sobel Kernal Conolution and Saves Output as JPG.
+    *Performs a Sobel Kernal Conolution and Saves Output as jpg.
 
 	Parameters
 	----------
 
 	image_path : <type 'str'>
-		Amplitude of the model light curve with units of signal to noise.
+		Path and file name of image (jpg or png)
 
 	Returns
 	-------
@@ -62,4 +62,5 @@ def kernal_convolution(image_path):
 
 if __name__ == '__main__':
 
+    #example file 'corpus.jpg'
     arr = kernal_convolution('corpus.jpg')

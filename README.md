@@ -10,7 +10,13 @@ Edge detection using a Sobel convolution kernal.
 
 ## Example
 
+Input:
+
 ![alt text](corpus.jpg)
+
+Output:
+
+![alt text](output.jpg)
 
 ## Authors
 

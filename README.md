@@ -14,7 +14,7 @@ Edge detection using a Sobel convolution kernal.
 
 ## Authors
 
-* **Christopher Desira**
+* **Christopher Desira (University of Cambridge)**
 
 ## License
 

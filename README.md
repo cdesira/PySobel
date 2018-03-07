@@ -12,11 +12,11 @@ Edge detection using a Sobel convolution kernal.
 
 Input:
 
-![alt text](corpus.jpg)
+<img src="corpus.jpg" width="425">
 
 Output:
 
-![alt text](output.jpg)
+<img src="output.jpg" width="425">
 
 ## Authors
 
